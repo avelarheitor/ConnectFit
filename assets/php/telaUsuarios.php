@@ -48,6 +48,7 @@ include_once("conexao.php");
             </div>
             <?php
             while ($exibir = $dadosUsuario->fetch_assoc()) {
+                //teste
             ?>
                 <tr>
                     <td><?php echo $exibir["idUsuario"] ?></td>

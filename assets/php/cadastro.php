@@ -1,4 +1,5 @@
 <?php
+//teste2
 include_once('conexao.php');
 
 $nomeUsuario = $_POST['nomeUsuario'];

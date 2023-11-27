@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Cadastre-se</title>
+</head>
+
+<body class="body1">
+  <div class="register-card">
+    <h1>Cadastre sua academia agora!</h1>
+    <form action="../php/cadastroAcademia.php" method="post">
+
+      <div class="form-item">
+        <label for="nomeAcademia" class="form-label">Nome da Academia</label>
+        <input type="text" class="form-element" id="nomeAcademia" name="nomeAcademia" required>
+      </div>
+
+      <div class="form-item">
+        <label for="email" class="form-label">Email da Academia</label>
+        <input type="email" class="form-element" id="email" name="emailAcademia" required>
+      </div>
+
+      <div class="form-item">
+        <label for="cnpj" class="form-label">CNPJ da Academia</label>
+        <input type="cnpj" class="form-element" id="cnpj" name="cnpj" required>
+      </div>
+
+      <div class="form-item">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-element" id="senha" name="senhaAcademia" required>
+      </div>
+
+      <div class="form-item">
+        <label for="confirmaSenha" class="form-label">Confirme sua Senha</label>
+        <input type="password" class="form-element" id="confirmaSenha" required>
+      </div>
+
+      <div class="form-item">
+        <label for="celular" class="form-label">Telefone de Contato</label>
+        <input type="tel" class="form-element" id="celular" name="telAcademia" required>
+      </div>
+
+      <div class="flex">
+        <button type="submit" class="btn btn-primary" name="btnSalvar" value="Salvar">Cadastrar</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

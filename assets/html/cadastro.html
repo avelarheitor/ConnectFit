@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Cadastre-se</title>
+</head>
+
+<body class="body1">
+  <div class="register-card">
+    <h1>Cadastre-se Agora</h1>
+    <form action="../php/cadastro.php" method="post">
+
+      <div class="form-item">
+        <label for="nomeUsuario" class="form-label">Nome de Usuário</label>
+        <input type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" required>
+      </div>
+
+      <div class="form-item">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-element" id="email" name="emailUsuario" required>
+      </div>
+
+      <div class="form-item">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-element" id="senha" name="senhaUsuario" required>
+      </div>
+
+      <div class="form-item">
+        <label for="confirmaSenha" class="form-label">Confirme sua Senha</label>
+        <input type="password" class="form-element" id="confirmaSenha" required>
+      </div>
+
+      <div class="form-item">
+        <label for="celular" class="form-label">Celular</label>
+        <input type="tel" class="form-element" id="celular" name="telUsuario" required>
+      </div>
+
+      <div class="flex">
+        <button type="submit" class="btn btn-primary" name="btnSalvar" value="Salvar">Cadastrar</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>

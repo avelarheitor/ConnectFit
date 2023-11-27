@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body1 {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: url("../images/halteres-na-academia.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.body1:after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  width: 60%;
+  height: 100vh;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+  z-index: -1;
+}
+
+.login-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 50px -30px black;
+  width: 1200px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.register-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 50px -30px black;
+  width: 600px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+}
+.register-card h1 {
+  margin-top: 25px;
+}
+.register-card .form-element {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 10px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: box-shadow 0.2s;
+}
+.register-card .form-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #07008b;
+}
+.register-card form {
+  margin-bottom: 2rem;
+}
+.register-card form > * {
+  margin-top: 1rem;
+}
+.register-card form button {
+  background-color: #07008b;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.register-card form button:active {
+  scale: 0.95;
+  background-color: #040058;
+}
+
+a {
+  text-decoration: none;
+  color: #07008b;
+}
+
+.column {
+  padding: 4rem;
+}
+.column:last-child {
+  background: url("../images/bg.png.webp") center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.column:last-child:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.5098039216));
+  inset: 0;
+}
+.column:last-child * {
+  z-index: 1;
+}
+.column:last-child #irPC {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: 2px solid #07008b;
+  color: black;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.column:last-child #irPC:hover {
+  background-color: #07008b;
+  color: white;
+}
+.column:last-child {
+  text-align: center;
+}
+.column h1 {
+  margin-bottom: 15px;
+}
+.column .form-element {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: box-shadow 0.2s;
+}
+.column .form-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #07008b;
+}
+.column form {
+  margin-top: 3rem;
+}
+.column form > * {
+  margin-top: 1rem;
+}
+.column form button {
+  background-color: #07008b;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.2s;
+}
+.column form button:active {
+  scale: 0.95;
+  background-color: #040058;
+}
+.column form .form-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .login-card {
+    display: block;
+    width: 500px;
+    text-align: center;
+  }
+  .login-card .column:last-child {
+    display: none;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.body2 {
+  min-height: 100vh;
+  background: url("../images/bg2.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to bottom, #00fefb, #7d40ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 30px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a {
+  background-color: #fff;
+  color: #2b1055;
+}
+
+.content {
+  margin-top: 120px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.text-titulo {
+  font-weight: 400;
+  font-size: 64px;
+}
+
+.text-subtitulotext-subtitulo {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.botao-main-content {
+  width: 180px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.secondary-content-titulo {
+  border-top: 0.4px solid #FFF2E7;
+  padding-top: 48px;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.secondary-content-p {
+  display: flex;
+  font-weight: 300;
+  font-size: 18px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.secondary-content-p-box {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.rodape {
+  padding-top: 20px;
+  border-top: 0.4px solid #FFF2E7;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

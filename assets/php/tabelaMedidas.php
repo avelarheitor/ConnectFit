@@ -85,7 +85,7 @@ if (isset($_POST["nomeUsuario"])) {
   <div class="container">
     <h1>Editar informações</h1>
     <div class="edit-card">
-      <form action="editarUsuario.php?idUsuario=<?php echo $idUsuario?>" method="POST">
+      <form action="tabelaMedidas.php?idUsuario=<?php echo $idUsuario?>" method="POST">
         <div class="user-details">
           <div class="form-item">
             <label for="ombroMed" class="form-label">Ombro (cm)</label>
@@ -108,12 +108,12 @@ if (isset($_POST["nomeUsuario"])) {
           </div>
 
           <div class="form-item">
-            <label for="antebracoEsqMed" class="form-label">Antebraço Esquerdo</label>
+            <label for="antebracoEsqMed" class="form-label">Antebraço Esquerdo (cm)</label>
             <input type="text" class="form-element" id="antebracoEsqMed" name="antebracoEsqMed" value="<?php echo $usuario["antebracoEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="antebracoDirMed" class="form-label">Antebraço Direito</label>
+            <label for="antebracoDirMed" class="form-label">Antebraço Direito (cm)</label>
             <input type="text" class="form-element" id="antebracoDirMed" name="antebracoDirMed" value="<?php echo $usuario["antebracoDirMed"] ?>" required>
           </div>
 
@@ -157,8 +157,9 @@ if (isset($_POST["nomeUsuario"])) {
     </div>
 
     <div class="flex">
-      <button type="submit"  value="Editar">Salvar</button>
+      <button type="submit" value="Editar">Salvar</button>
     </div>
+    
     </form>
   </div>
 </body>

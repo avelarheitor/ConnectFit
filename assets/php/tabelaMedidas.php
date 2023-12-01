@@ -154,6 +154,7 @@ if (isset($_POST["nomeUsuario"])) {
 
 
         </div>
+        
     </div>
 
     <div class="flex">
@@ -162,6 +163,7 @@ if (isset($_POST["nomeUsuario"])) {
     
     </form>
   </div>
+
 </body>
 
 </html>

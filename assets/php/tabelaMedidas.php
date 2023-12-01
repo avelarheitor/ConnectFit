@@ -40,8 +40,8 @@ if (isset($_POST["nomeUsuario"])) {
   if ($conn->query($sql) === TRUE) {
 ?>
     <script>
-      //alert("Alteração feita com sucesso!");
-      //window.location = "telaUsuarios.php";
+      alert("Alteração feita com sucesso!");
+      window.location = "telaUsuarios.php";
     </script>
   <?php
   } else {
@@ -85,7 +85,7 @@ if (isset($_POST["nomeUsuario"])) {
   <div class="container">
     <h1>Editar informações</h1>
     <div class="edit-card">
-      <form action="editarUsuario.php?idUsuario=<?php echo $idUsuario?>" method="POST">
+      <form action="tabelaMedidas.php?idUsuario=<?php echo $idUsuario?>" method="POST">
         <div class="user-details">
           <div class="form-item">
             <label for="ombroMed" class="form-label">Ombro (cm)</label>
@@ -157,7 +157,7 @@ if (isset($_POST["nomeUsuario"])) {
     </div>
 
     <div class="flex">
-      <button type="submit"  value="Editar">Salvar</button>
+      <button type="submit" value="Editar">Salvar</button>
     </div>
     </form>
   </div>

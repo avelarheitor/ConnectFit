@@ -156,14 +156,15 @@ if (isset($_POST["nomeUsuario"])) {
         </div>
     </div>
 
-    <div class="flex">
-    <a href="tabelaMedidas.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button>Tabela de Medidas</button></a>
-    </div>
+    
 
     <div class="flex">
       <button type="submit"  value="Editar">Salvar</button>
     </div>
     </form>
+    <div class="flex">
+    <a href="tabelaMedidas.php?idUsuario=<?php echo $idUsuario ?>"><button>Tabela de Medidas</button></a>
+    </div>
   </div>
 </body>
 

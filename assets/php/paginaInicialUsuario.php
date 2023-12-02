@@ -34,7 +34,7 @@
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="telaPerfil.php?idUsuario=<?php echo $idUsuario ?>">
+                        <a href="#">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">Meu Perfil</span>
                         </a>

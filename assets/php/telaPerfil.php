@@ -1,3 +1,16 @@
+<?php
+    include_once("conexao.php");
+
+    if (isset($_POST["nomeUsuario"])){
+        $idUsuario = $_GET["idUsuario"];
+        $nomeUsuario = $_POST["nomeUsuario"];
+        $emailUsuario = $_POST["emailUsuario"];
+        $telUsuario = $_POST["telUsuario"];
+        $idadeUsuario = $_POST["idadeUsuario"];
+        $tipoFicha = $_POST["tipoFicha"];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +22,18 @@
     <title>Tela Perfil</title>
 </head>
 <body>
+
+    <?php
+    if (isset($_GET["idUsuario"])) {
+        $idUsuario = $_GET["idUsuario"];
+
+        $sql = "SELECT * FROM usuario WHERE idUsuario = $idUsuario";
+
+        $consulta = $conn->query($sql);
+        $usuario = $consulta->fetch_assoc();
+    }
+    ?>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -90,32 +115,32 @@
 
             <div class="profile-control">
                 <label for="nome">Nome:</label>
-                <input disabled type="text" id="nome">
+                <input disabled type="text" id="nome" value="<?php echo $usuario["nomeUsuario"] ?>">
             </div>
             
             <div class="profile-control">
                 <label for="email">Email:</label>
-                <input disabled type="text" id="email">
+                <input disabled type="text" id="email" value="<?php echo $usuario["emailUsuario"] ?>">
+            </div>
+
+            <div class="profile-control">
+                <label for="tipoFicha">Telefone:</label>
+                <input disabled type="text" id="tipoFicha" value="<?php echo $usuario["telUsuario"] ?>">
             </div>
             
             <div class="profile-control">
                 <label for="idade">Idade:</label>
-                <input disabled type="text" id="idade">
+                <input disabled type="text" id="idade" value="<?php echo $usuario["idadeUsuario"] ?>">
             </div>
         
             <div class="profile-control">
                 <label for="localizacao">Localização:</label>
-                <input disabled type="text" id="localizacao">
+                <input disabled type="text" id="localizacao" value="<?php echo $usuario[""] ?>">
             </div>
             
             <div class="profile-control">
                 <label for="tipoFicha">Tipo de Ficha:</label>
-                <input disabled type="text" id="tipoFicha">
-            </div>
-        
-            <div class="profile-control">
-                <label for="peso">Peso:</label>
-                <input disabled type="text" id="peso">
+                <input disabled type="text" id="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>">
             </div>
       
           </div>    

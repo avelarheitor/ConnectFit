@@ -21,7 +21,7 @@ if ($resultado->num_rows == 1) {
 
     $_SESSION['nome'] = $usuario['nomeUsuario'];
 
-    header("Location: ../html/paginaInicialUsuario.html");
+    header("Location: ../php/paginaInicialUsuario.php");
 } else {
     echo "Falha ao logar! Email ou Senha incorretos!";
 }

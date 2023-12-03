@@ -6,6 +6,7 @@ if (isset($_POST["nomeUsuario"])) {
   $nomeUsuario = $_POST["nomeUsuario"];
   $emailUsuario = $_POST["emailUsuario"];
   $telUsuario = $_POST["telUsuario"];
+  $enderecoUsuario = $_POST["enderecoUsuario"];
   $idadeUsuario = $_POST["idadeUsuario"];
   $tipoFicha = $_POST["tipoFicha"];
   $pesoUsuario = $_POST["pesoUsuario"];
@@ -22,6 +23,7 @@ if (isset($_POST["nomeUsuario"])) {
               SET nomeUsuario = '$nomeUsuario',
               emailUsuario = '$emailUsuario',
               telUsuario = '$telUsuario',
+              enderecoUsuario = '$enderecoUsuario',
               idadeUsuario = '$idadeUsuario',
               tipoFicha = '$tipoFicha',
               pesoUsuario = '$pesoUsuario',
@@ -100,6 +102,11 @@ if (isset($_POST["nomeUsuario"])) {
           <div class="form-item">
             <label for="celular" class="form-label">Telefone</label>
             <input type="tel" class="form-element" id="celular" name="telUsuario" value="<?php echo $usuario["telUsuario"] ?>" required>
+          </div>
+
+          <div class="form-item">
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-element" id="endereco" name="enderecoUsuario" value="<?php echo $usuario["enderecoUsuario"] ?>" required>
           </div>
 
           <div class="form-item">

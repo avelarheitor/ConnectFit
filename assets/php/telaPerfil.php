@@ -60,13 +60,19 @@
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="paginaInicialUsuario.php?idUsuario=<?php echo $_SESSION['id'] ?>">
+                            <i class='bx bx-home-alt-2 icon'></i>
+                            <span class="text nav-text">Início</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="telaPerfil.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">Meu Perfil</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="telaPerfil.php?idUsuario=<?php echo $_SESSION['id'] ?>">
+                        <a href="fichaUsuario.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-receipt icon'></i>
                             <span class="text nav-text">Minha Ficha</span>
                         </a>

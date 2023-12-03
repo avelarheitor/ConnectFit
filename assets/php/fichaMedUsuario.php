@@ -108,75 +108,70 @@
     <h1>Editar informações</h1>
     <div class="edit-card">
       <form action="editarUsuario.php?idUsuario=<?php echo $idUsuario?>" method="POST">
-        <div class="user-details">
+      <div class="user-details">
           <div class="form-item">
-            <label for="nomeUsuario" class="form-label">Nome</label>
-            <input disable type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" value="<?php echo $usuario["nomeUsuario"] ?>" required>
+            <label for="ombroMed" class="form-label">Ombro (cm)</label>
+            <input disabled type="text" class="form-element" id="ombroMed" name="ombroMed" value="<?php echo $usuario["ombroMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="email" class="form-label">Email</label>
-            <input disable type="email" class="form-element" id="email" name="emailUsuario" value="<?php echo $usuario["emailUsuario"] ?>" required>
+            <label for="peitoMed" class="form-label">Peito (cm)</label>
+            <input disabled type="text" class="form-element" id="peitoMed" name="peitoMed" value="<?php echo $usuario["peitoMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="celular" class="form-label">Telefone</label>
-            <input disable type="tel" class="form-element" id="celular" name="telUsuario" value="<?php echo $usuario["telUsuario"] ?>" required>
+            <label for="bicepsEsqMed" class="form-label">Bíceps Esquerdo (cm)</label>
+            <input disabled type="text" class="form-element" id="bicepsEsqMed" name="bicepsEsqMed" value="<?php echo $usuario["bicepsEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="endereco" class="form-label">Endereço</label>
-            <input disable type="text" class="form-element" id="endereco" name="enderecoUsuario" value="<?php echo $usuario["enderecoUsuario"] ?>" required>
+            <label for="bicepsDirMed" class="form-label">Bíceps Direito (cm)</label>
+            <input disabled type="text" class="form-element" id="bicepsDirMed" name="bicepsDirMed" value="<?php echo $usuario["bicepsDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="idade" class="form-label">Idade</label>
-            <input disable type="number" class="form-element" id="idade" name="idadeUsuario" value="<?php echo $usuario["idadeUsuario"] ?>" required>
+            <label for="antebracoEsqMed" class="form-label">Antebraço Esquerdo (cm)</label>
+            <input disabled type="text" class="form-element" id="antebracoEsqMed" name="antebracoEsqMed" value="<?php echo $usuario["antebracoEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="ficha" class="form-label">Tipo de Ficha</label>
-            <input disable type="text" class="form-element" id="ficha" name="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>" required>
+            <label for="antebracoDirMed" class="form-label">Antebraço Direito (cm)</label>
+            <input disabled type="text" class="form-element" id="antebracoDirMed" name="antebracoDirMed" value="<?php echo $usuario["antebracoDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="peso" class="form-label">Peso (Kg)</label>
-            <input disable type="text" class="form-element" id="peso" name="pesoUsuario" value="<?php echo $usuario["pesoUsuario"] ?>" required>
+            <label for="abdomenMed" class="form-label">Abdomen (cm)</label>
+            <input disabled type="text" class="form-element" id="abdomenMed" name="abdomenMed" value="<?php echo $usuario["abdomenMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="altura" class="form-label">Altura (cm)</label>
-            <input disable type="text" class="form-element" id="altura" name="alturaUsuario" value="<?php echo $usuario["alturaUsuario"] ?>" required>
+            <label for="quadrilMed" class="form-label">Quadril (cm)</label>
+            <input disabled type="text" class="form-element" id="quadrilMed" name="quadrilMed" value="<?php echo $usuario["quadrilMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="imc" class="form-label">IMC</label>
-            <input disable type="text" class="form-element" id="imc" name="imcUsuario" value="<?php echo $usuario["imcUsuario"] ?>" required>
+            <label for="coxaEsqMed" class="form-label">Coxa Esquerda (cm)</label>
+            <input disabled type="text" class="form-element" id="coxaEsqMed" name="coxaEsqMed" value="<?php echo $usuario["coxaEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="perGordura" class="form-label">Percentual de Gordura (%)</label>
-            <input disable type="text" class="form-element" id="perGordura" name="perGUsuario" value="<?php echo $usuario["perGUsuario"] ?>" required>
+            <label for="coxaDirMed" class="form-label">Coxa Direita (cm)</label>
+            <input disabled type="text" class="form-element" id="coxaDirMed" name="coxaDirMed" value="<?php echo $usuario["coxaDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="masGordura" class="form-label">Massa de Gordura (Kg)</label>
-            <input disable type="text" class="form-element" id="masGordura" name="masGUsuario" value="<?php echo $usuario["masGUsuario"] ?>" required>
+            <label for="pantuEsqMed" class="form-label">Panturrilha Esquerda (cm)</label>
+            <input disabled type="text" class="form-element" id="pantuEsqMed" name="pantuEsqMed" value="<?php echo $usuario["pantuEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="massa" class="form-label">Massa Magra (Kg)</label>
-            <input disable type="text" class="form-element" id="massa" name="massaUsuario" value="<?php echo $usuario["massaUsuario"] ?>" required>
+            <label for="pantuDirMed" class="form-label">Panturrilha Direita (cm)</label>
+            <input disabled type="text" class="form-element" id="pantuDirMed" name="pantuDirMed" value="<?php echo $usuario["pantuDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
-            <label for="massaLivre" class="form-label">Massa Livre de Gordura</label>
-            <input disable type="text" class="form-element" id="massaLivre" name="massaLivreUsuario" value="<?php echo $usuario["massaLivreUsuario"] ?>" required>
-          </div>
-
-          <div class="form-item">
-            <label for="idadeMet" class="form-label">Idade Metabólica (anos)</label>
-            <input disable type="number" class="form-element" id="idadeMet" name="idadeMetUsuario" value="<?php echo $usuario["idadeMetUsuario"] ?>" required>
+            <label for="cinturaMed" class="form-label">Cintura (cm)</label>
+            <input disabled type="text" class="form-element" id="cinturaMed" name="cinturaMed" value="<?php echo $usuario["cinturaMed"] ?>" required>
           </div>
 
         </div>
@@ -184,7 +179,7 @@
 
     </form>
     <div class="flex">
-    <a href="fichaMedUsuario.php?idUsuario=<?php echo $idUsuario ?>"><button>Tabela de Medidas</button></a>
+    <a href="fichaUsuario.php?idUsuario=<?php echo $idUsuario ?>"><button>Voltar</button></a>
     </div>
   </div>
     </section>

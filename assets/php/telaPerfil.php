@@ -7,6 +7,7 @@
         $nomeUsuario = $_POST["nomeUsuario"];
         $emailUsuario = $_POST["emailUsuario"];
         $telUsuario = $_POST["telUsuario"];
+        $enderecoUsuario = $_POST["enderecoUsuario"];
         $idadeUsuario = $_POST["idadeUsuario"];
         $tipoFicha = $_POST["tipoFicha"];
     }
@@ -65,7 +66,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="telaPerfil.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-receipt icon'></i>
                             <span class="text nav-text">Minha Ficha</span>
                         </a>
@@ -136,7 +137,7 @@
         
             <div class="profile-control">
                 <label for="localizacao">Localização:</label>
-                <!-- <input disabled type="text" id="localizacao" value="<?php echo $usuario[""] ?>"> -->
+                <input disabled type="text" id="localizacao" value="<?php echo $usuario["enderecoUsuario"] ?>">
             </div>
             
             <div class="profile-control">

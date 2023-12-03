@@ -223,7 +223,7 @@ header .image-text .header-text {
 .home header {
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 30px;
 }
 
 .profile-container {
@@ -266,7 +266,7 @@ header .image-text .header-text {
 .profile-control {
     position: relative;
     margin: 10px 0;
-    width: 310px;
+    width: 100%;
     border-bottom: 1px solid black;
 }
 

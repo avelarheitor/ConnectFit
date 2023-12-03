@@ -45,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="fichaUsuario.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-receipt icon'></i>
                             <span class="text nav-text">Minha Ficha</span>
                         </a>

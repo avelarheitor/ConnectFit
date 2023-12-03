@@ -69,13 +69,13 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="treinos.html">
+                        <a href="../html/treinos.html">
                             <i class='bx bx-dumbbell icon'></i>
                             <span class="text nav-text">Treinos</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="execucoes.html">
+                        <a href="../html/execucoes.html">
                             <i class='bx bx-video icon'></i>
                             <span class="text nav-text">Execuções</span>
 

@@ -267,7 +267,7 @@ header .image-text .header-text {
     position: relative;
     margin: 10px 0;
     width: 310px;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000000;
 }
 
 .profile-control label {
@@ -282,5 +282,5 @@ header .image-text .header-text {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #fff;
+    color: #000000;
 }

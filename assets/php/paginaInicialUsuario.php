@@ -1,3 +1,8 @@
+<?php
+    require_once("conexao.php");
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +24,7 @@
 
                 <div class="text header-text">
                     <span class="name">Connect Fit</span>
-                    <span class="profession">Usuário</span>
+                    <span class="profession"><?php echo $_SESSION['nome'] ?></span>
                 </div>
             </div>
 
@@ -34,7 +39,7 @@
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="telaPerfil.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav-text">Meu Perfil</span>
                         </a>

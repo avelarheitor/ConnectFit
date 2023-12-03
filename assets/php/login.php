@@ -20,6 +20,7 @@ if ($resultado->num_rows == 1) {
     }
 
     $_SESSION['nome'] = $usuario['nomeUsuario'];
+    $_SESSION['id'] = $usuario['idUsuario'];
 
     header("Location: ../php/paginaInicialUsuario.php");
 } else {

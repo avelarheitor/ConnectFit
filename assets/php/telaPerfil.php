@@ -1,5 +1,6 @@
 <?php
     include_once("conexao.php");
+    session_start();
 
     if (isset($_POST["nomeUsuario"])){
         $idUsuario = $_GET["idUsuario"];
@@ -43,7 +44,7 @@
 
                 <div class="text header-text">
                     <span class="name">Connect Fit</span>
-                    <span class="profession">Usuário</span>
+                    <span class="profession"><?php echo $_SESSION['nome'] ?></span>
                 </div>
             </div>
 
@@ -135,7 +136,7 @@
         
             <div class="profile-control">
                 <label for="localizacao">Localização:</label>
-                <input disabled type="text" id="localizacao" value="<?php echo $usuario[""] ?>">
+                <!-- <input disabled type="text" id="localizacao" value="<?php echo $usuario[""] ?>"> -->
             </div>
             
             <div class="profile-control">

@@ -90,7 +90,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="https://wa.me/5531983453723?text=ola%21+estou+com+d%C3%BAvidas+">
                             <i class='bx bx-phone icon' ></i>
                             <span class="text nav-text">Fale Conosco</span>
                         </a>
@@ -101,7 +101,7 @@
 
             <div class="bottm-content">
                 <li class="nav-link">
-                    <a href="#">
+                    <a href="../html/index.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav-text">Sair</span>
                     </a>

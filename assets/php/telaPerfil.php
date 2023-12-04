@@ -11,6 +11,7 @@
         $idadeUsuario = $_POST["idadeUsuario"];
         $tipoFicha = $_POST["tipoFicha"];
     }
+
 ?>
 
 <!DOCTYPE html>
@@ -115,11 +116,17 @@
         <header>
             <h1>Meu Perfil</h1>
           </header>
-        
+
           <div class="profile-container">
-            <div class="profile-picture">
-                <img src="../images/profilePic.jpeg" alt="Minha Foto">
+
+        <form method="post" class="box" id="form-form" action="telaPerfil.php" enctype="multipart/form-data">
+            <div class="profile-picture box">
+
+                <img id='image-preview' src="" alt="Minha Foto" class='w-100 h-100'>
+                <i class='bx bx-cloud-upload'></i>
+                <input id='image-field' type="submit" type="file">
             </div>
+        </form>
 
             <div class="profile-control">
                 <label for="nome">Nome:</label>
@@ -155,6 +162,7 @@
     </section>
 
     <script src="../js/paginaInicialUsuarios.js"></script>
+    <script src="../js/telaPerfil.js"></script>
 
 </body>
 </html>

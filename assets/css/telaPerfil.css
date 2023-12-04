@@ -241,18 +241,65 @@ header .image-text .header-text {
     background: white;
   }
 
-.profile-picture {
+/*.profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
-  }
+    border: 1px solid black;
+  }*/
 
 .profile-picture img {
     width: 100%;
     height: auto;
   }
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#form-form {
+    & .profile-picture{
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px;
+        border: 1px solid black;
+    }
+
+    & .profile-picture i{
+        position: absolute;
+        margin: 0 auto;
+        font-size: 50px;
+    }
+
+    & .profile-picture img{
+        object-fit: cover;
+    }
+
+    & #image-field{
+        position: absolute;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
 
 .home h1, h2, p {
     text-align: center;

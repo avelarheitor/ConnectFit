@@ -111,72 +111,72 @@
         <div class="user-details">
           <div class="form-item">
             <label for="nomeUsuario" class="form-label">Nome</label>
-            <input disable type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" value="<?php echo $usuario["nomeUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" value="<?php echo $usuario["nomeUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="email" class="form-label">Email</label>
-            <input disable type="email" class="form-element" id="email" name="emailUsuario" value="<?php echo $usuario["emailUsuario"] ?>" required>
+            <input disabled type="email" class="form-element" id="email" name="emailUsuario" value="<?php echo $usuario["emailUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="celular" class="form-label">Telefone</label>
-            <input disable type="tel" class="form-element" id="celular" name="telUsuario" value="<?php echo $usuario["telUsuario"] ?>" required>
+            <input disabled type="tel" class="form-element" id="celular" name="telUsuario" value="<?php echo $usuario["telUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="endereco" class="form-label">Endereço</label>
-            <input disable type="text" class="form-element" id="endereco" name="enderecoUsuario" value="<?php echo $usuario["enderecoUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="endereco" name="enderecoUsuario" value="<?php echo $usuario["enderecoUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="idade" class="form-label">Idade</label>
-            <input disable type="number" class="form-element" id="idade" name="idadeUsuario" value="<?php echo $usuario["idadeUsuario"] ?>" required>
+            <input disabled type="number" class="form-element" id="idade" name="idadeUsuario" value="<?php echo $usuario["idadeUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="ficha" class="form-label">Tipo de Ficha</label>
-            <input disable type="text" class="form-element" id="ficha" name="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>" required>
+            <input disabled type="text" class="form-element" id="ficha" name="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="peso" class="form-label">Peso (Kg)</label>
-            <input disable type="text" class="form-element" id="peso" name="pesoUsuario" value="<?php echo $usuario["pesoUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="peso" name="pesoUsuario" value="<?php echo $usuario["pesoUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="altura" class="form-label">Altura (cm)</label>
-            <input disable type="text" class="form-element" id="altura" name="alturaUsuario" value="<?php echo $usuario["alturaUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="altura" name="alturaUsuario" value="<?php echo $usuario["alturaUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="imc" class="form-label">IMC</label>
-            <input disable type="text" class="form-element" id="imc" name="imcUsuario" value="<?php echo $usuario["imcUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="imc" name="imcUsuario" value="<?php echo $usuario["imcUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="perGordura" class="form-label">Percentual de Gordura (%)</label>
-            <input disable type="text" class="form-element" id="perGordura" name="perGUsuario" value="<?php echo $usuario["perGUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="perGordura" name="perGUsuario" value="<?php echo $usuario["perGUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="masGordura" class="form-label">Massa de Gordura (Kg)</label>
-            <input disable type="text" class="form-element" id="masGordura" name="masGUsuario" value="<?php echo $usuario["masGUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="masGordura" name="masGUsuario" value="<?php echo $usuario["masGUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="massa" class="form-label">Massa Magra (Kg)</label>
-            <input disable type="text" class="form-element" id="massa" name="massaUsuario" value="<?php echo $usuario["massaUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="massa" name="massaUsuario" value="<?php echo $usuario["massaUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="massaLivre" class="form-label">Massa Livre de Gordura</label>
-            <input disable type="text" class="form-element" id="massaLivre" name="massaLivreUsuario" value="<?php echo $usuario["massaLivreUsuario"] ?>" required>
+            <input disabled type="text" class="form-element" id="massaLivre" name="massaLivreUsuario" value="<?php echo $usuario["massaLivreUsuario"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="idadeMet" class="form-label">Idade Metabólica (anos)</label>
-            <input disable type="number" class="form-element" id="idadeMet" name="idadeMetUsuario" value="<?php echo $usuario["idadeMetUsuario"] ?>" required>
+            <input disabled type="number" class="form-element" id="idadeMet" name="idadeMetUsuario" value="<?php echo $usuario["idadeMetUsuario"] ?>" required>
           </div>
 
         </div>

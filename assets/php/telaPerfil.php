@@ -119,12 +119,14 @@
 
           <div class="profile-container">
 
-        <form method="post" class="box" id="form-form" action="telaPerfil.php" enctype="multipart/form-data">
+        <form method="post" class="box" id="form-form" action="" enctype="multipart/form-data">
             <div class="profile-picture box">
-
-                <img id='image-preview' src="" alt="Minha Foto" class='w-100 h-100'>
+                
+                <!-- <img id="image-preview" src="../images/profilePic.jpeg" alt=""> -->
+                <img id='image-preview' src="" alt="" class='w-100 h-100'>
                 <i class='bx bx-cloud-upload'></i>
-                <input id='image-field' type="submit" type="file">
+                <input id='image-field' type="file">
+                <!-- <input id='image-field' type="submit" name="acao" value="Enviar"> -->
             </div>
         </form>
 

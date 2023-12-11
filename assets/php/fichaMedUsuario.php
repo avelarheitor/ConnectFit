@@ -69,7 +69,7 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="../html/treinos.html">
+                        <a href="../php/telaTreinos.php">
                             <i class='bx bx-dumbbell icon'></i>
                             <span class="text nav-text">Treinos</span>
                         </a>

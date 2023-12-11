@@ -198,10 +198,14 @@ header .image-text .header-text {
 .home {
     position: relative;
     left: 250px;
-    background: url(../images/telaInicio.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #00fefb, #7d40ff);
+    background-position: center;
+    background-size: center;
     width: calc(100% - 250px);
     transition: var(--tran-05);
 }

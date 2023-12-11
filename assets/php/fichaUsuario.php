@@ -136,7 +136,7 @@
 
           <div class="form-item">
             <label for="ficha" class="form-label">Tipo de Ficha</label>
-            <input disabled type="text" class="form-element" id="ficha" name="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>" required>
+            <input readonly type="text" class="form-element" id="ficha" name="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>" required>
           </div>
 
           <div class="form-item">

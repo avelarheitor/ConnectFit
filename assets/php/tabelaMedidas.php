@@ -1,7 +1,8 @@
 <?php
-include_once("conexao.php");
 
-if (isset($_POST["nomeUsuario"])) {
+include_once("conexao.php");
+//echo $_POST["nomeUsuario"];
+if (isset($_POST["ombroMed"])) {
   $idUsuario = $_GET["idUsuario"];
   $ombroMed = $_POST["ombroMed"];
   $peitoMed = $_POST["peitoMed"];
@@ -10,7 +11,7 @@ if (isset($_POST["nomeUsuario"])) {
   $antebracoEsqMed = $_POST["antebracoEsqMed"];
   $antebracoDirMed = $_POST["antebracoDirMed"];
   $abdomenMed = $_POST["abdomenMed"];
-  $quadrilMed = $_POST["quadrlMed"];
+  $quadrilMed = $_POST["quadrilMed"];
   $coxaEsqMed = $_POST["coxaEsqMed"];
   $coxaDirMed = $_POST["coxaDirMed"];
   $pantuEsqMed = $_POST["pantuEsqMed"];
@@ -18,7 +19,6 @@ if (isset($_POST["nomeUsuario"])) {
   $cinturaMed = $_POST["cinturaMed"];
 
   $sql = "UPDATE usuario
-
               SET ombroMed = '$ombroMed',
               peitoMed = '$peitoMed',
               bicepsEsqMed = '$bicepsEsqMed',
@@ -32,8 +32,9 @@ if (isset($_POST["nomeUsuario"])) {
               pantuEsqMed = '$pantuEsqMed',
               pantuDirMed = '$pantuDirMed',
               cinturaMed = '$cinturaMed'
-
               WHERE idUsuario = $idUsuario";
+
+  //echo $sql;
 
               
 
@@ -86,8 +87,13 @@ if (isset($_POST["nomeUsuario"])) {
     <h1>Editar informações</h1>
     <div class="edit-card">
       <form action="tabelaMedidas.php?idUsuario=<?php echo $idUsuario?>" method="POST">
+      
         <div class="user-details">
-          <div class="form-item">
+        <div class="form-item">
+            <label for="nomeUsuario" class="form-label">Nome aluno</label>
+            <input type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" value="<?php echo $usuario["nomeUsuario"] ?>" required>
+          </div>  
+        <div class="form-item">
             <label for="ombroMed" class="form-label">Ombro (cm)</label>
             <input type="text" class="form-element" id="ombroMed" name="ombroMed" value="<?php echo $usuario["ombroMed"] ?>" required>
           </div>

@@ -5,12 +5,14 @@
     if (isset($_POST["nomeUsuario"])){
         $idUsuario = $_GET["idUsuario"];
         $nomeUsuario = $_POST["nomeUsuario"];
+        $fotoPerfil = $_POST["fotoPerfil"];
         $emailUsuario = $_POST["emailUsuario"];
         $telUsuario = $_POST["telUsuario"];
         $enderecoUsuario = $_POST["enderecoUsuario"];
         $idadeUsuario = $_POST["idadeUsuario"];
         $tipoFicha = $_POST["tipoFicha"];
     }
+
 
 ?>
 
@@ -119,14 +121,15 @@
 
           <div class="profile-container">
 
+        <?php include_once("upload.php")?>
         <form method="post" class="box" id="form-form" action="" enctype="multipart/form-data">
             <div class="profile-picture box">
                 
                 <!-- <img id="image-preview" src="../images/profilePic.jpeg" alt=""> -->
                 <img id='image-preview' src="" alt="" class='w-100 h-100'>
                 <i class='bx bx-cloud-upload'></i>
-                <input id='image-field' type="file">
-                <!-- <input id='image-field' type="submit" name="acao" value="Enviar"> -->
+                <input id='file' type="file">
+                <input type="submit" name="upload" value="Enviar">
             </div>
         </form>
 

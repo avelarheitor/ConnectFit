@@ -47,6 +47,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 2</td>
@@ -57,6 +58,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 3</td>
@@ -67,6 +69,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2" rowspan="3">Terça</td>
@@ -78,6 +81,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2">Grupo 2</td>
@@ -88,6 +92,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2">Grupo 3</td>
@@ -98,6 +103,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1" rowspan="3">Quarta</td>
@@ -109,6 +115,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 2</td>
@@ -119,6 +126,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 3</td>
@@ -129,6 +137,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2" rowspan="3">Quinta</td>
@@ -140,6 +149,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2">Grupo 2</td>
@@ -150,6 +160,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo2">Grupo 3</td>
@@ -160,6 +171,7 @@ include_once("conexao.php");
                         <td class="grupo2">Exercício 5</td>
                         <td class="grupo2">Exercício 6</td>
                         <td class="grupo2">Exercício 7</td>
+                        <td class="grupo2"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1" rowspan="3">Sexta</td>
@@ -171,6 +183,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 2</td>
@@ -181,6 +194,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <tr>
                         <td class="grupo1">Grupo 3</td>
@@ -191,6 +205,7 @@ include_once("conexao.php");
                         <td class="grupo1">Exercício 5</td>
                         <td class="grupo1">Exercício 6</td>
                         <td class="grupo1">Exercício 7</td>
+                        <td class="grupo1"><button type="submit" class="btn btn-primary">Salvar</button></td>
                     </tr>
                 </table>
             </div>

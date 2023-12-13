@@ -55,4 +55,20 @@ td {
     background-color: #7d40ff;
 }
 
+button {
+    border: none;
+    outline: none;
+    background: #DDD;
+    width: 80%;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.7s;  
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+
 

@@ -37,7 +37,7 @@ include_once("conexao.php");
                             <th>ID</th>
                             <th>Nome</th>
                             <th>Idade</th>
-                            <th>Peso</th>
+                            <th>Peso (kg)</th>
                             <th>Tipo de Ficha</th>
                             <th class="acao">Editar</th>
                             <th class="acao">Excluir</th>

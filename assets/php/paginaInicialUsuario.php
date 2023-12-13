@@ -58,13 +58,13 @@
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="../php/telaTreinos.php">
+                        <a href="telaTreinos.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-dumbbell icon'></i>
                             <span class="text nav-text">Treinos</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="../html/execucoes.html">
+                        <a href="telaExecuções.php?idUsuario=<?php echo $_SESSION['id'] ?>">
                             <i class='bx bx-video icon'></i>
                             <span class="text nav-text">Execuções</span>
 

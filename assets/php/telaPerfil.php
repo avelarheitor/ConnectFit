@@ -121,7 +121,6 @@
 
           <div class="profile-container">
 
-        <?php include_once("upload.php")?>
         <form method="post" class="box" id="form-form" action="" enctype="multipart/form-data">
             <div class="profile-picture box">
                 

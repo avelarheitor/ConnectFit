@@ -121,7 +121,7 @@
 
           <div class="profile-container">
 
-        <form method="post" class="box" id="form-form" action="" enctype="multipart/form-data">
+        <form method="post" class="box" id="form-form" action="upload.php" enctype="multipart/form-data">
             <div class="profile-picture box">
                 
                 <!-- <img id="image-preview" src="../images/profilePic.jpeg" alt=""> -->

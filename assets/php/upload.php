@@ -13,7 +13,7 @@
         $size = $file["size"];
         $tmp = $file["tmp_name"];
 
-        $extensao = @end(explode (".", $file["name"]));
+        $extensao = @end(explode(".", $file["name"]));
 
         $novoNome = rand() . ".$extensao";
 

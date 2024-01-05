@@ -18,7 +18,13 @@ if ($conn->query($sql) === TRUE) {
     </script>
 
 <?php
-
+    for($dia = 2; $dia<7;$dia++){
+        for($i=0; $i<3; $i++){
+            $sql = "INSERT INTO treino(idUsuario, dia)
+            VALUES ('$mysql_insert_id()', '$dia')";
+            $conn->query($sql);
+        }
+    }
     header("Location: ../php/telaUsuarios.php");
 } else {
 ?>

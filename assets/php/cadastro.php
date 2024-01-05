@@ -17,7 +17,6 @@ if ($conn->query($sql) === TRUE) {
     </script>
 
 <?php
-
     header("Location: ../html/loginUsuario.html");
 } else {
 ?>

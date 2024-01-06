@@ -57,7 +57,7 @@ include_once("conexao.php");
                     <td><?php echo $exibir["idadeUsuario"] ?></td>
                     <td><?php echo $exibir["pesoUsuario"] ?></td>
                     <td><?php echo $exibir["tipoFicha"] ?></td>
-                    <td class="acao"><a href="fichaTreino.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i class='bx bx-edit'></i></button></a></td>
+                    <td class="acao"><a href="fichaTreino.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i class='bx bx-detail'></i></button></a></td>
                     <td class="acao"><a href="editarUsuario.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i class='bx bx-edit'></i></button></a></td>
                     <td class="acao"><button onclick="confirmarExclusao(
                     '<?php echo $exibir['idUsuario'] ?>', 

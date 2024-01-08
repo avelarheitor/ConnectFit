@@ -1,6 +1,6 @@
 <?php
-    require_once("conexao.php");
-    session_start();
+require_once("conexao.php");
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +15,18 @@
 </head>
 
 <body>
+
+    <?php
+    if (isset($_GET["idUsuario"])) {
+        $idUsuario = $_GET["idUsuario"];
+
+        $sql = "SELECT * FROM usuario WHERE idUsuario = $idUsuario";
+
+        $consulta = $conn->query($sql);
+        $usuario = $consulta->fetch_assoc();
+    }
+    ?>
+
     <nav class="sidebar close">
         <header>
             <div class="image-text">
@@ -24,7 +36,9 @@
 
                 <div class="text header-text">
                     <span class="name">Connect Fit</span>
-                    <span class="profession"><?php echo $_SESSION['nome'] ?></span>
+                    <span class="profession">
+                        <?php echo $_SESSION['nome'] ?>
+                    </span>
                 </div>
             </div>
 
@@ -101,161 +115,215 @@
                         <th class="cabecalho">Músculos</th>
                         <th class="cabecalho" colspan="8">Exercícios</th>
                     </tr>
+                    <!-- Abre  linhas para 1 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Segunda</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
+                        <?php
+
+                        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='2'";
+                        //echo $sql; die();
+                        
+
+                        $consulta = $conn->query($sql);
+                        while ($exibir = $consulta->fetch_assoc()) {
+                            ?>
+
+                            <td class="grupo1">
+                                <?php echo $exibir["grupo"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex1"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex2"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex3"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex4"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex5"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex6"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex7"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                        } //fim do while
+                        ?>
+
+                    <!-- Abre  linhas para 2 Dia -->
                     <tr>
                         <td class="grupo2" rowspan="3">Terça</td>
-                        <td class="grupo2">Grupo 1</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 2</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 3</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
+                        <?php
+
+                        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='3'";
+                        //echo $sql; die();
+                        
+
+                        $consulta = $conn->query($sql);
+                        while ($exibir = $consulta->fetch_assoc()) {
+                            ?>
+
+                            <td class="grupo2">
+                                <?php echo $exibir["grupo"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex1"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex2"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex3"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex4"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex5"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex6"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex7"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                        } //fim do while
+                        ?>
+
+                    <!-- Abre  linhas para 3 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Quarta</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
+                        <?php
+
+                        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='4'";
+                        //echo $sql; die();
+                        
+
+                        $consulta = $conn->query($sql);
+                        while ($exibir = $consulta->fetch_assoc()) {
+                            ?>
+
+                            <td class="grupo1">
+                                <?php echo $exibir["grupo"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex1"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex2"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex3"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex4"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex5"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex6"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex7"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                        } //fim do while
+                        ?>
+
+                    <!-- Abre  linhas para 4 Dia -->
                     <tr>
                         <td class="grupo2" rowspan="3">Quinta</td>
-                        <td class="grupo2">Grupo 1</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 2</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 3</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                    </tr>
+                        <?php
+
+                        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='5'";
+                        //echo $sql; die();
+                        
+
+                        $consulta = $conn->query($sql);
+                        while ($exibir = $consulta->fetch_assoc()) {
+                            ?>
+
+                            <td class="grupo2">
+                                <?php echo $exibir["grupo"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex1"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex2"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex3"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex4"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex5"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex6"]; ?>
+                            </td>
+                            <td class="grupo2">
+                                <?php echo $exibir["ex7"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                        } //fim do while
+                        ?>
+
+                    <!-- Abre  linhas para 5 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Sexta</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                    </tr>
+                        <?php
+
+                        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='6'";
+                        //echo $sql; die();
+                        
+
+                        $consulta = $conn->query($sql);
+                        while ($exibir = $consulta->fetch_assoc()) {
+                            ?>
+
+                            <td class="grupo1">
+                                <?php echo $exibir["grupo"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex1"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex2"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex3"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex4"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex5"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex6"]; ?>
+                            </td>
+                            <td class="grupo1">
+                                <?php echo $exibir["ex7"]; ?>
+                            </td>
+                        </tr>
+                        <?php
+                        } //fim do while
+                        ?>
                 </table>
             </div>
         </div>

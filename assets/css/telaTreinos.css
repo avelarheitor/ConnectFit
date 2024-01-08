@@ -238,7 +238,10 @@ table {
 
 td {
     height: 36px;
+    width: 70px;
     text-align: center;
+    font-size: small;
+    font-weight: 400;
 }
 
 .cabecalho {
@@ -253,11 +256,3 @@ td {
 .grupo2 {
     background-color: #a19d9d;
 }
-
-
-  
-
-
-
-
-

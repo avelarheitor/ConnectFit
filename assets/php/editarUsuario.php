@@ -42,7 +42,6 @@ if (isset($_POST["nomeUsuario"])) {
   if ($conn->query($sql) === TRUE) {
   ?>
     <script>
-      alert("Alteração feita com sucesso!");
       window.location = "telaUsuarios.php";
     </script>
   <?php

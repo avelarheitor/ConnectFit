@@ -6,7 +6,7 @@ const loadImage = (e) => {
 
     const file = filePath.files;
 
-    const fileReader = new FileReader(); 
+    const fileReader = new FileReader();
 
     fileReader.onload = () => {
         imagePreview.src = fileReader.result;

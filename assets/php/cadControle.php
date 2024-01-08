@@ -12,26 +12,22 @@ $sql = "INSERT INTO usuario (nomeUsuario, emailUsuario, senhaUsuario, idadeUsuar
             VALUES ('$nomeUsuario', '$emailUsuario', '$senhaUsuario', '$idadeUsuario', '$pesoUsuario', '$fichaUsuario')";
 
 if ($conn->query($sql) === TRUE) {
-?>
-    <script>
-        alert("Cadastro realizado com sucesso!");
-    </script>
-
-<?php
+    ?>
+    <?php
     //for($dia = 2; $dia<7;$dia++){
-        //for($i=0; $i<3; $i++){
-            //$sql = "INSERT INTO treino(idUsuario, dia)
-            //VALUES ('$mysql_insert_id()', '$dia')";
-            //$conn->query($sql);
-        //}
+    //for($i=0; $i<3; $i++){
+    //$sql = "INSERT INTO treino(idUsuario, dia)
+    //VALUES ('$mysql_insert_id()', '$dia')";
+    //$conn->query($sql);
+    //}
     //}
     header("Location: ../php/telaUsuarios.php");
 } else {
-?>
+    ?>
     <script>
         alert("Erro ao tentar realizar cadastro");
         window.history.back();
     </script>
-<?php
+    <?php
 }
 ?>

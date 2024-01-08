@@ -10,7 +10,6 @@ if (isset($_GET["idUsuario"])) {
 ?>
 
         <script>
-            alert("Registro excluído com sucesso.");
             window.location = "telaUsuarios.php";
         </script>
 

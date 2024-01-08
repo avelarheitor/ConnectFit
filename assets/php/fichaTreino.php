@@ -50,16 +50,20 @@ include_once("conexao.php");
                     <tr>
                         <th class="cabecalho">Dias</th>
                         <th class="cabecalho">Músculos</th>
-                        <th class="cabecalho" colspan="9">Exercícios</th>
+                        <th class="cabecalho" colspan="8">Exercícios</th>
                     </tr>
                     <!-- Abre  linhas para 1 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Segunda</td>
                     <?php 
-                      $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='2'";
-                      $consulta = $conn->query($sql);
-                      while ($exibir = $consulta->fetch_assoc())
-                      {
+                    
+                    $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='2'";
+                    //echo $sql; die();
+
+                    
+                    $consulta = $conn->query($sql);
+                    while ($exibir = $consulta->fetch_assoc())
+                    {
                     ?>
                         
                         <td class="grupo1"><?php echo $exibir["grupo"];?></td>
@@ -79,196 +83,155 @@ include_once("conexao.php");
                                                                             '<?php echo $exibir['ex6'] ?>',
                                                                             '<?php echo $exibir['ex7'] ?>'
                                                                              )" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
                     </tr>
                     <?php 
                       }//fim do while
                     ?>
-                    <!-- tr>
-                        <td class="grupo1" rowspan="3">Segunda</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(2)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(2)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(2)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr -->
+
+                    <!-- Abre  linhas para 2 Dia -->
                     <tr>
                         <td class="grupo2" rowspan="3">Terça</td>
-                        <td class="grupo2">Grupo 1</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(3)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
+                    <?php 
+                    
+                    $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='3'";
+                    //echo $sql; die();
+
+                    
+                    $consulta = $conn->query($sql);
+                    while ($exibir = $consulta->fetch_assoc())
+                    {
+                    ?>
+                        
+                        <td class="grupo2"><?php echo $exibir["grupo"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex1"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex2"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex3"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex4"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex5"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex6"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex7"];?></td>
+                        <td class="grupo2"><button onclick = "openModal1(3, '<?php echo $exibir['grupo'] ?>',
+                                                                            '<?php echo $exibir['ex1'] ?>',
+                                                                            '<?php echo $exibir['ex2'] ?>',
+                                                                            '<?php echo $exibir['ex3'] ?>',
+                                                                            '<?php echo $exibir['ex4'] ?>',
+                                                                            '<?php echo $exibir['ex5'] ?>',
+                                                                            '<?php echo $exibir['ex6'] ?>',
+                                                                            '<?php echo $exibir['ex7'] ?>'
+                                                                             )" type="button" class="btn btn-primary">Editar</button></td>
                     </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 2</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(3)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 3</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(3)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
+                    <?php 
+                      }//fim do while
+                    ?>
+
+                    <!-- Abre  linhas para 3 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Quarta</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(4)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
+                    <?php 
+                    
+                    $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='4'";
+                    //echo $sql; die();
+
+                    
+                    $consulta = $conn->query($sql);
+                    while ($exibir = $consulta->fetch_assoc())
+                    {
+                    ?>
+                        
+                        <td class="grupo1"><?php echo $exibir["grupo"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex1"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex2"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex3"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex4"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex5"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex6"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex7"];?></td>
+                        <td class="grupo1"><button onclick = "openModal1(4, '<?php echo $exibir['grupo'] ?>',
+                                                                            '<?php echo $exibir['ex1'] ?>',
+                                                                            '<?php echo $exibir['ex2'] ?>',
+                                                                            '<?php echo $exibir['ex3'] ?>',
+                                                                            '<?php echo $exibir['ex4'] ?>',
+                                                                            '<?php echo $exibir['ex5'] ?>',
+                                                                            '<?php echo $exibir['ex6'] ?>',
+                                                                            '<?php echo $exibir['ex7'] ?>'
+                                                                             )" type="button" class="btn btn-primary">Editar</button></td>
                     </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(4)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(4)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
+                    <?php 
+                      }//fim do while
+                    ?>
+
+                    <!-- Abre  linhas para 4 Dia -->
                     <tr>
                         <td class="grupo2" rowspan="3">Quinta</td>
-                        <td class="grupo2">Grupo 1</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(5)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
+                    <?php 
+                    
+                    $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='5'";
+                    //echo $sql; die();
+
+                    
+                    $consulta = $conn->query($sql);
+                    while ($exibir = $consulta->fetch_assoc())
+                    {
+                    ?>
+                        
+                        <td class="grupo2"><?php echo $exibir["grupo"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex1"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex2"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex3"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex4"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex5"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex6"];?></td>
+                        <td class="grupo2"><?php echo $exibir["ex7"];?></td>
+                        <td class="grupo2"><button onclick = "openModal1(5, '<?php echo $exibir['grupo'] ?>',
+                                                                            '<?php echo $exibir['ex1'] ?>',
+                                                                            '<?php echo $exibir['ex2'] ?>',
+                                                                            '<?php echo $exibir['ex3'] ?>',
+                                                                            '<?php echo $exibir['ex4'] ?>',
+                                                                            '<?php echo $exibir['ex5'] ?>',
+                                                                            '<?php echo $exibir['ex6'] ?>',
+                                                                            '<?php echo $exibir['ex7'] ?>'
+                                                                             )" type="button" class="btn btn-primary">Editar</button></td>
                     </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 2</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(5)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo2">Grupo 3</td>
-                        <td class="grupo2">Exercício 1</td>
-                        <td class="grupo2">Exercício 2</td>
-                        <td class="grupo2">Exercício 3</td>
-                        <td class="grupo2">Exercício 4</td>
-                        <td class="grupo2">Exercício 5</td>
-                        <td class="grupo2">Exercício 6</td>
-                        <td class="grupo2">Exercício 7</td>
-                        <td class="grupo2"><button onclick = "openModal1(5)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo2"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
+                    <?php 
+                      }//fim do while
+                    ?>
+                    
+                    <!-- Abre  linhas para 5 Dia -->
                     <tr>
                         <td class="grupo1" rowspan="3">Sexta</td>
-                        <td class="grupo1">Grupo 1</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(6)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
+                    <?php 
+                    
+                    $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='6'";
+                    //echo $sql; die();
+
+                    
+                    $consulta = $conn->query($sql);
+                    while ($exibir = $consulta->fetch_assoc())
+                    {
+                    ?>
+                        
+                        <td class="grupo1"><?php echo $exibir["grupo"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex1"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex2"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex3"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex4"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex5"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex6"];?></td>
+                        <td class="grupo1"><?php echo $exibir["ex7"];?></td>
+                        <td class="grupo1"><button onclick = "openModal1(6, '<?php echo $exibir['grupo'] ?>',
+                                                                            '<?php echo $exibir['ex1'] ?>',
+                                                                            '<?php echo $exibir['ex2'] ?>',
+                                                                            '<?php echo $exibir['ex3'] ?>',
+                                                                            '<?php echo $exibir['ex4'] ?>',
+                                                                            '<?php echo $exibir['ex5'] ?>',
+                                                                            '<?php echo $exibir['ex6'] ?>',
+                                                                            '<?php echo $exibir['ex7'] ?>'
+                                                                             )" type="button" class="btn btn-primary">Editar</button></td>
                     </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 2</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(6)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
-                    <tr>
-                        <td class="grupo1">Grupo 3</td>
-                        <td class="grupo1">Exercício 1</td>
-                        <td class="grupo1">Exercício 2</td>
-                        <td class="grupo1">Exercício 3</td>
-                        <td class="grupo1">Exercício 4</td>
-                        <td class="grupo1">Exercício 5</td>
-                        <td class="grupo1">Exercício 6</td>
-                        <td class="grupo1">Exercício 7</td>
-                        <td class="grupo1"><button onclick = "openModal1(6)" type="button" class="btn btn-primary">Editar</button></td>
-                        <td class="grupo1"><button type="button" class="btn btn-primary">Salvar</button></td>
-                    </tr>
+                    <?php 
+                      }//fim do while
+                    ?>
+                    
                 </table>
             </div>
             <div class="modal-container">
@@ -276,31 +239,31 @@ include_once("conexao.php");
                 <form action="insertTreino.php" method="post">
                     <input id="idUsuario" type="hidden" name="idUsuario" value="<?php echo $idUsuario;?>" />
                     <label for="grupo">Grupo Muscular</label>
-                    <input id="grupo" type="text" name="grupo" required />
+                    <input id="grupo" type="text" name="grupo" />
             
                     <input type="hidden" id="_dia" name="_dia" />
                     <input type="hidden" id="grupoAnt" name="grupoAnt" />
 
                     <label for="ex1">Exercício 1</label>
-                    <input type="text" id="ex1" name="ex1" required />
+                    <input type="text" id="ex1" name="ex1" />
 
                     <label for="ex2">Exercício 2</label>
-                    <input type="text" id="ex2" name="ex2" required />
+                    <input type="text" id="ex2" name="ex2" />
 
                     <label for="ex3">Exercício 3</label>
-                    <input type="text" id="ex3" name="ex3" required />
+                    <input type="text" id="ex3" name="ex3" />
 
                     <label for="ex4">Exercício 4</label>
-                    <input type="text" id="ex4" name="ex4" required />
+                    <input type="text" id="ex4" name="ex4" />
 
                     <label for="ex5">Exercício 5</label>
-                    <input type="text" id="ex5" name="ex5" required />
+                    <input type="text" id="ex5" name="ex5" />
 
                     <label for="ex6">Exercício 6</label>
-                    <input type="text" id="ex6" name="ex6" required />
+                    <input type="text" id="ex6" name="ex6" />
 
                     <label for="ex7">Exercício 7</label>
-                    <input type="text" id="ex7" name="ex7" required />
+                    <input type="text" id="ex7" name="ex7" />
 
                     <button id="btnSalvar">Salvar</button>
                 </form>

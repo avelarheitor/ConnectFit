@@ -228,12 +228,12 @@ header .image-text .header-text {
     background: #f1f1f1;
     border-radius: 10px;
 }
-   
+
 .container::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 10px;
 }
-   
+
 .container::-webkit-scrollbar-thumb:hover {
     background: #555;
     border-radius: 10px;
@@ -248,7 +248,7 @@ header .image-text .header-text {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    
+
 }
 
 .video {

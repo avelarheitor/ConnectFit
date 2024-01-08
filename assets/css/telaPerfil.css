@@ -217,7 +217,6 @@ header .image-text .header-text {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-    
 }
 
 .home header {
@@ -239,7 +238,7 @@ header .image-text .header-text {
     border-radius: 10px;
     padding: 25px 30px;
     background: white;
-  }
+}
 
 /*.profile-picture {
     width: 150px;
@@ -253,13 +252,13 @@ header .image-text .header-text {
 .profile-picture img {
     width: 100%;
     height: auto;
-  }
+}
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.h-100{
+.h-100 {
     height: 100%;
 }
 
@@ -272,7 +271,7 @@ header .image-text .header-text {
 }
 
 #form-form {
-    & .profile-picture{
+    & .profile-picture {
         position: relative;
         width: 150px;
         height: 150px;
@@ -282,17 +281,17 @@ header .image-text .header-text {
         border: 1px solid black;
     }
 
-    & .profile-picture i{
+    & .profile-picture i {
         position: absolute;
         margin: 0 auto;
         font-size: 50px;
     }
 
-    & .profile-picture img{
+    & .profile-picture img {
         object-fit: cover;
     }
 
-    & #file{
+    & #file {
         position: absolute;
         margin: 0 auto;
         width: 100px;
@@ -301,9 +300,11 @@ header .image-text .header-text {
     }
 }
 
-.home h1, h2, p {
+.home h1,
+h2,
+p {
     text-align: center;
-  }
+}
 
 .sidebar.close~.home {
     left: 88px;

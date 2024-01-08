@@ -1,74 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #00fefb, #7d40ff);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #00fefb, #7d40ff);
 }
 
 body .container {
-    width: 90%;
-    height: 80%;
-    border-radius: 10px;
-    padding: 25px 30px;
-    background: white;
+  width: 90%;
+  height: 80%;
+  border-radius: 10px;
+  padding: 25px 30px;
+  background: white;
 }
 
 .workout-table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 td {
-    height: 36px;
-    width: 70px;
-    text-align: center;
+  height: 36px;
+  width: 70px;
+  text-align: center;
+  font-size: small;
+  font-weight: 400;
 }
 
 .cabecalho {
-    color: #DDD;
-    background-color: #000000;
+  color: #DDD;
+  background-color: #000000;
+}
+
+#reps {
+  width: 10px;
 }
 
 .grupo1 {
-    background-color: #c2c2c2;
+  background-color: #c2c2c2;
 }
 
 .grupo2 {
-    background-color: #a19d9d;
+  background-color: #a19d9d;
 }
 
 button {
-    border: none;
-    outline: none;
-    background: #DDD;
-    width: 80%;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.7s;  
+  border: none;
+  outline: none;
+  background: #DDD;
+  width: 80%;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.7s;
 }
 
 button:hover {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 thead tr th {

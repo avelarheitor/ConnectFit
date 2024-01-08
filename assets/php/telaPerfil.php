@@ -124,11 +124,7 @@
         <form method="post" class="box" id="form-form" action="upload.php" enctype="multipart/form-data">
             <div class="profile-picture box">
                 
-                <!-- <img id="image-preview" src="../images/profilePic.jpeg" alt=""> -->
-                <img id='image-preview' src="" alt="" class='w-100 h-100'>
-                <i class='bx bx-cloud-upload'></i>
-                <input id='file' type="file">
-                <input type="submit" name="upload" value="Enviar">
+                <img id="image-preview" src="../images/usuario-de-perfil.png" alt="">
             </div>
         </form>
 

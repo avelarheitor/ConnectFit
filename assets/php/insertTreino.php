@@ -30,13 +30,9 @@ $sql = "UPDATE treino
 echo $sql;
 if ($conn->query($sql) === TRUE) {
 ?>
-    <script>
-        alert("Cadastro realizado com sucesso!");
-    </script>
-
 <?php
 
-    header("Location: ../php/fichaTreino.php");
+    header("Location: ../php/fichaTreino.php?idUsuario=$idUsuario");
 } else {
 ?>
     <script>

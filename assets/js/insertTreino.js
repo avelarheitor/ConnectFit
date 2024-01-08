@@ -2,7 +2,7 @@ const modal = document.querySelector('.modal-container')
 const tbody = document.querySelector('tbody')
 const sDia = document.querySelector('#dia')
 const sGrupo = document.querySelector('#grupo')
-const sEx1= document.querySelector('#ex1')
+const sEx1 = document.querySelector('#ex1')
 const sEx2 = document.querySelector('#ex2')
 const sEx3 = document.querySelector('#ex3')
 const sEx4 = document.querySelector('#ex4')
@@ -16,7 +16,7 @@ function openModal1(dia, grupo, ex1, ex2, ex3, ex4, ex5, ex6, ex7) {//openModal1
   element.value = dia;
   var element1 = document.getElementById("grupoAnt");
   element1.value = grupo;
- 
+
   var egrupo = document.getElementById("grupo");
   egrupo.value = grupo;
 
@@ -34,7 +34,7 @@ function openModal1(dia, grupo, ex1, ex2, ex3, ex4, ex5, ex6, ex7) {//openModal1
   eEx6.value = ex6;
   var eEx7 = document.getElementById("ex7");
   eEx7.value = ex7;
-  
+
   const sDia = dia;
   modal.classList.add('active')
 

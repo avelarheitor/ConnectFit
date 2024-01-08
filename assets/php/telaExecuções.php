@@ -19,7 +19,7 @@ session_start();
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="../images/logo.png" alt="">
+                    <img src="../images/logo.png" alt="Usuário">
                 </span>
 
                 <div class="text header-text">
@@ -101,72 +101,105 @@ session_start();
             <div class="videos-container">
                 <!-- links dos vídeos do YouTube abaixo -->
                 <div class="video">
-
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zbN3mChHGDI?si=Bnba7wQTES1SvGK2"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="1583" height="604" src="https://www.youtube.com/embed/VIKn2Pf1Wmg"
+                        title="AGACHAMENTO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FeR-4_Opt-g?si=QyiKRQgqnadO4Uo7"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="1583" height="604" src="https://www.youtube.com/embed/g-AIMWjnuiU"
+                        title="ABDOMINAL SUPRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J9TMigct0bk?si=vSBjZ7xN7EP1Lqmz"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="1583" height="604" src="https://www.youtube.com/embed/mk71cw4uNJ4"
+                        title="ELEVAÇÃO LATERAL COM HALTERES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/t9QtksPOedU?si=iEGIixUn1Y6F3FXX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/mk3nIJ2nYE4"
+                        title="TRÍCEPS NA BARRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/23M1mnnhsek"
+                        title="SUPINO RETO NA BARRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/rw54MmASnAY" title="LEG 45º"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/0SKxwk0gBHU"
+                        title="CADEIRA ABDUTORA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/4p7J5qmVgSU"
+                        title="CADEIRA EXTENSORA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                        picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/b5RkrNs_EGM"
+                        title="Puxada frente supinada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/-QGC1cL6ETE"
+                        title="Tríceps pulley corda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/e53vSzibkO0"
+                        title="Remada curvada pronada barra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/qbVOIdt1SU4"
+                        title="Elevação frontal anilha rotação 90" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-
-
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/Od9914tc8sg"
+                        title="Crucifixo polia baixa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/uh0oZorifmM"
+                        title="Desenvolvimento máquina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/8ZJ2EfAr1Eo"
+                        title="Pulley tríceps barra v" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                    gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/7lc8Ow4vIwA"
+                        title="Remada baixa fechada triângulo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/wUT3hmnzq3c"
+                        title="Crucifixo invertido máquina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/AX1-0IxL11g"
+                        title="Remada polia alta corda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/m6IIorkQe8E"
+                        title="Levantamento Terra Sumô" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video">
+                    <iframe width="363" height="645" src="https://www.youtube.com/embed/MC5hF4JDLm4"
+                        title="Abdominal infra solo/banco" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>

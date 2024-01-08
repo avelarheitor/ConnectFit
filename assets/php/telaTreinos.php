@@ -4,14 +4,14 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/telaTreinos.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Página Inicial</title>
+    <title>Treinos</title>
 </head>
 
 <body>
@@ -121,8 +121,6 @@ session_start();
                         <?php
 
                         $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='2'";
-                        //echo $sql; die();
-                        
 
                         $consulta = $conn->query($sql);
                         while ($exibir = $consulta->fetch_assoc()) {
@@ -163,8 +161,6 @@ session_start();
                         <?php
 
                         $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='3'";
-                        //echo $sql; die();
-                        
 
                         $consulta = $conn->query($sql);
                         while ($exibir = $consulta->fetch_assoc()) {
@@ -205,8 +201,6 @@ session_start();
                         <?php
 
                         $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='4'";
-                        //echo $sql; die();
-                        
 
                         $consulta = $conn->query($sql);
                         while ($exibir = $consulta->fetch_assoc()) {
@@ -247,8 +241,6 @@ session_start();
                         <?php
 
                         $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='5'";
-                        //echo $sql; die();
-                        
 
                         $consulta = $conn->query($sql);
                         while ($exibir = $consulta->fetch_assoc()) {
@@ -289,8 +281,6 @@ session_start();
                         <?php
 
                         $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario and dia='6'";
-                        //echo $sql; die();
-                        
 
                         $consulta = $conn->query($sql);
                         while ($exibir = $consulta->fetch_assoc()) {

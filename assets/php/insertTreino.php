@@ -29,16 +29,16 @@ $sql = "UPDATE treino
               WHERE idUsuario = $idUsuario and dia=$dia and grupo = '$grupoAnt'";
 echo $sql;
 if ($conn->query($sql) === TRUE) {
-?>
-<?php
+    ?>
+    <?php
 
     header("Location: ../php/fichaTreino.php?idUsuario=$idUsuario");
 } else {
-?>
+    ?>
     <script>
         alert("Erro ao tentar realizar cadastro");
         window.history.back();
     </script>
-<?php
+    <?php
 }
 ?>

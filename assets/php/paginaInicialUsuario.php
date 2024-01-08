@@ -1,10 +1,10 @@
 <?php
-    require_once("conexao.php");
-    session_start();
+require_once("conexao.php");
+session_start();
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,9 @@
 
                 <div class="text header-text">
                     <span class="name">Connect Fit</span>
-                    <span class="profession"><?php echo $_SESSION['nome'] ?></span>
+                    <span class="profession">
+                        <?php echo $_SESSION['nome'] ?>
+                    </span>
                 </div>
             </div>
 

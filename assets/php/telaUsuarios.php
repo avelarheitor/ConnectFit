@@ -3,7 +3,7 @@ include_once("conexao.php");
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@ include_once("conexao.php");
         $dadosUsuario = $conn->query($sql);
 
         if ($dadosUsuario->num_rows >= 0) {
-        ?>
+            ?>
             <div class="divTable">
                 <table>
                     <thead>
@@ -50,27 +50,39 @@ include_once("conexao.php");
             <?php
             while ($exibir = $dadosUsuario->fetch_assoc()) {
                 //teste
-            ?>
+                ?>
                 <tr>
-                    <td><?php echo $exibir["idUsuario"] ?></td>
-                    <td><?php echo $exibir["nomeUsuario"] ?></td>
-                    <td><?php echo $exibir["idadeUsuario"] ?></td>
-                    <td><?php echo $exibir["pesoUsuario"] ?></td>
-                    <td><?php echo $exibir["tipoFicha"] ?></td>
-                    <td class="acao"><a href="fichaTreino.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i class='bx bx-detail'></i></button></a></td>
-                    <td class="acao"><a href="editarUsuario.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i class='bx bx-edit'></i></button></a></td>
+                    <td>
+                        <?php echo $exibir["idUsuario"] ?>
+                    </td>
+                    <td>
+                        <?php echo $exibir["nomeUsuario"] ?>
+                    </td>
+                    <td>
+                        <?php echo $exibir["idadeUsuario"] ?>
+                    </td>
+                    <td>
+                        <?php echo $exibir["pesoUsuario"] ?>
+                    </td>
+                    <td>
+                        <?php echo $exibir["tipoFicha"] ?>
+                    </td>
+                    <td class="acao"><a href="fichaTreino.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i
+                                    class='bx bx-detail'></i></button></a></td>
+                    <td class="acao"><a href="editarUsuario.php?idUsuario=<?php echo $exibir['idUsuario'] ?>"><button><i
+                                    class='bx bx-edit'></i></button></a></td>
                     <td class="acao"><button onclick="confirmarExclusao(
                     '<?php echo $exibir['idUsuario'] ?>', 
                     '<?php echo $exibir['nomeUsuario'] ?>')"><i class='bx bx-trash'></i></button>
                     </td>
                 </tr>
-            <?php
+                <?php
             }
             ?>
 
             </table>
 
-        <?php
+            <?php
 
         }
 

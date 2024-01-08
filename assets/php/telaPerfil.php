@@ -1,23 +1,24 @@
 <?php
-    include_once("conexao.php");
-    session_start();
+include_once("conexao.php");
+session_start();
 
-    if (isset($_POST["nomeUsuario"])){
-        $idUsuario = $_GET["idUsuario"];
-        $nomeUsuario = $_POST["nomeUsuario"];
-        $fotoPerfil = $_POST["fotoPerfil"];
-        $emailUsuario = $_POST["emailUsuario"];
-        $telUsuario = $_POST["telUsuario"];
-        $enderecoUsuario = $_POST["enderecoUsuario"];
-        $idadeUsuario = $_POST["idadeUsuario"];
-        $tipoFicha = $_POST["tipoFicha"];
-    }
+if (isset($_POST["nomeUsuario"])) {
+    $idUsuario = $_GET["idUsuario"];
+    $nomeUsuario = $_POST["nomeUsuario"];
+    $fotoPerfil = $_POST["fotoPerfil"];
+    $emailUsuario = $_POST["emailUsuario"];
+    $telUsuario = $_POST["telUsuario"];
+    $enderecoUsuario = $_POST["enderecoUsuario"];
+    $idadeUsuario = $_POST["idadeUsuario"];
+    $tipoFicha = $_POST["tipoFicha"];
+}
 
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +27,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tela Perfil</title>
 </head>
+
 <body>
 
     <?php
@@ -48,7 +50,9 @@
 
                 <div class="text header-text">
                     <span class="name">Connect Fit</span>
-                    <span class="profession"><?php echo $_SESSION['nome'] ?></span>
+                    <span class="profession">
+                        <?php echo $_SESSION['nome'] ?>
+                    </span>
                 </div>
             </div>
 
@@ -94,7 +98,7 @@
                     </li>
                     <li class="nav-link">
                         <a href="https://wa.me/5531983453723?text=ola%21+estou+com+d%C3%BAvidas+">
-                            <i class='bx bx-phone icon' ></i>
+                            <i class='bx bx-phone icon'></i>
                             <span class="text nav-text">Fale Conosco</span>
                         </a>
                     </li>
@@ -117,22 +121,22 @@
     <section class="home">
         <header>
             <h1>Meu Perfil</h1>
-          </header>
+        </header>
 
-          <div class="profile-container">
+        <div class="profile-container">
 
-        <form method="post" class="box" id="form-form" action="upload.php" enctype="multipart/form-data">
-            <div class="profile-picture box">
-                
-                <img id="image-preview" src="../images/usuario-de-perfil.png" alt="">
-            </div>
-        </form>
+            <form method="post" class="box" id="form-form" action="upload.php" enctype="multipart/form-data">
+                <div class="profile-picture box">
+
+                    <img id="image-preview" src="../images/usuario-de-perfil.png" alt="">
+                </div>
+            </form>
 
             <div class="profile-control">
                 <label for="nome">Nome:</label>
                 <input disabled type="text" id="nome" value="<?php echo $usuario["nomeUsuario"] ?>">
             </div>
-            
+
             <div class="profile-control">
                 <label for="email">Email:</label>
                 <input disabled type="text" id="email" value="<?php echo $usuario["emailUsuario"] ?>">
@@ -142,27 +146,28 @@
                 <label for="tipoFicha">Telefone:</label>
                 <input disabled type="text" id="tipoFicha" value="<?php echo $usuario["telUsuario"] ?>">
             </div>
-            
+
             <div class="profile-control">
                 <label for="idade">Idade:</label>
                 <input disabled type="text" id="idade" value="<?php echo $usuario["idadeUsuario"] ?>">
             </div>
-        
+
             <div class="profile-control">
                 <label for="localizacao">Localização:</label>
                 <input disabled type="text" id="localizacao" value="<?php echo $usuario["enderecoUsuario"] ?>">
             </div>
-            
+
             <div class="profile-control">
                 <label for="tipoFicha">Tipo de Ficha:</label>
                 <input disabled type="text" id="tipoFicha" value="<?php echo $usuario["tipoFicha"] ?>">
             </div>
-      
-          </div>    
+
+        </div>
     </section>
 
     <script src="../js/paginaInicialUsuarios.js"></script>
     <script src="../js/telaPerfil.js"></script>
 
 </body>
+
 </html>

@@ -7,22 +7,22 @@ if (isset($_GET["idUsuario"])) {
     $sql = "DELETE FROM usuario WHERE idUsuario = $idUsuario";
 
     if ($conn->query($sql) === TRUE) {
-?>
+        ?>
 
         <script>
             window.location = "telaUsuarios.php";
         </script>
 
-    <?php
+        <?php
 
     } else {
-    ?>
+        ?>
         <script>
             alert("Erro ao excluir o registro.");
             window.location = "telaUsuarios.php";
         </script>
 
-<?php
+        <?php
     }
 }
 ?>

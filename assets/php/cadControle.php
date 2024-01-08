@@ -14,13 +14,6 @@ $sql = "INSERT INTO usuario (nomeUsuario, emailUsuario, senhaUsuario, idadeUsuar
 if ($conn->query($sql) === TRUE) {
     ?>
     <?php
-    //for($dia = 2; $dia<7;$dia++){
-    //for($i=0; $i<3; $i++){
-    //$sql = "INSERT INTO treino(idUsuario, dia)
-    //VALUES ('$mysql_insert_id()', '$dia')";
-    //$conn->query($sql);
-    //}
-    //}
     header("Location: ../php/telaUsuarios.php");
 } else {
     ?>

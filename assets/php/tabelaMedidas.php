@@ -34,29 +34,25 @@ if (isset($_POST["ombroMed"])) {
               cinturaMed = '$cinturaMed'
               WHERE idUsuario = $idUsuario";
 
-  //echo $sql;
-
-              
-
   if ($conn->query($sql) === TRUE) {
-?>
+    ?>
     <script>
       window.location = "telaUsuarios.php";
     </script>
-  <?php
+    <?php
   } else {
-  ?>
+    ?>
     <script>
       alert("Erro ao alterar o registro...");
       window.history.back();
     </script>
-<?php
+    <?php
   }
 }
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -64,7 +60,7 @@ if (isset($_POST["ombroMed"])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/editarUsuario.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Editar Usuário</title>
+  <title>Tabela de Medidas Usuário</title>
 </head>
 
 <body>
@@ -85,87 +81,101 @@ if (isset($_POST["ombroMed"])) {
   <div class="container">
     <h1>Editar informações</h1>
     <div class="edit-card">
-      <form action="tabelaMedidas.php?idUsuario=<?php echo $idUsuario?>" method="POST">
-      
+      <form action="tabelaMedidas.php?idUsuario=<?php echo $idUsuario ?>" method="POST">
+
         <div class="user-details">
-        <div class="form-item">
+          <div class="form-item">
             <label for="nomeUsuario" class="form-label">Nome aluno</label>
-            <input type="text" class="form-element" id="nomeUsuario" name="nomeUsuario" value="<?php echo $usuario["nomeUsuario"] ?>" required>
-          </div>  
-        <div class="form-item">
+            <input type="text" class="form-element" id="nomeUsuario" name="nomeUsuario"
+              value="<?php echo $usuario["nomeUsuario"] ?>" required>
+          </div>
+          <div class="form-item">
             <label for="ombroMed" class="form-label">Ombro (cm)</label>
-            <input type="text" class="form-element" id="ombroMed" name="ombroMed" value="<?php echo $usuario["ombroMed"] ?>" required>
+            <input type="text" class="form-element" id="ombroMed" name="ombroMed"
+              value="<?php echo $usuario["ombroMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="peitoMed" class="form-label">Peito (cm)</label>
-            <input type="text" class="form-element" id="peitoMed" name="peitoMed" value="<?php echo $usuario["peitoMed"] ?>" required>
+            <input type="text" class="form-element" id="peitoMed" name="peitoMed"
+              value="<?php echo $usuario["peitoMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="bicepsEsqMed" class="form-label">Bíceps Esquerdo (cm)</label>
-            <input type="text" class="form-element" id="bicepsEsqMed" name="bicepsEsqMed" value="<?php echo $usuario["bicepsEsqMed"] ?>" required>
+            <input type="text" class="form-element" id="bicepsEsqMed" name="bicepsEsqMed"
+              value="<?php echo $usuario["bicepsEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="bicepsDirMed" class="form-label">Bíceps Direito (cm)</label>
-            <input type="text" class="form-element" id="bicepsDirMed" name="bicepsDirMed" value="<?php echo $usuario["bicepsDirMed"] ?>" required>
+            <input type="text" class="form-element" id="bicepsDirMed" name="bicepsDirMed"
+              value="<?php echo $usuario["bicepsDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="antebracoEsqMed" class="form-label">Antebraço Esquerdo (cm)</label>
-            <input type="text" class="form-element" id="antebracoEsqMed" name="antebracoEsqMed" value="<?php echo $usuario["antebracoEsqMed"] ?>" required>
+            <input type="text" class="form-element" id="antebracoEsqMed" name="antebracoEsqMed"
+              value="<?php echo $usuario["antebracoEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="antebracoDirMed" class="form-label">Antebraço Direito (cm)</label>
-            <input type="text" class="form-element" id="antebracoDirMed" name="antebracoDirMed" value="<?php echo $usuario["antebracoDirMed"] ?>" required>
+            <input type="text" class="form-element" id="antebracoDirMed" name="antebracoDirMed"
+              value="<?php echo $usuario["antebracoDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="abdomenMed" class="form-label">Abdomen (cm)</label>
-            <input type="text" class="form-element" id="abdomenMed" name="abdomenMed" value="<?php echo $usuario["abdomenMed"] ?>" required>
+            <input type="text" class="form-element" id="abdomenMed" name="abdomenMed"
+              value="<?php echo $usuario["abdomenMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="quadrilMed" class="form-label">Quadril (cm)</label>
-            <input type="text" class="form-element" id="quadrilMed" name="quadrilMed" value="<?php echo $usuario["quadrilMed"] ?>" required>
+            <input type="text" class="form-element" id="quadrilMed" name="quadrilMed"
+              value="<?php echo $usuario["quadrilMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="coxaEsqMed" class="form-label">Coxa Esquerda (cm)</label>
-            <input type="text" class="form-element" id="coxaEsqMed" name="coxaEsqMed" value="<?php echo $usuario["coxaEsqMed"] ?>" required>
+            <input type="text" class="form-element" id="coxaEsqMed" name="coxaEsqMed"
+              value="<?php echo $usuario["coxaEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="coxaDirMed" class="form-label">Coxa Direita (cm)</label>
-            <input type="text" class="form-element" id="coxaDirMed" name="coxaDirMed" value="<?php echo $usuario["coxaDirMed"] ?>" required>
+            <input type="text" class="form-element" id="coxaDirMed" name="coxaDirMed"
+              value="<?php echo $usuario["coxaDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="pantuEsqMed" class="form-label">Panturrilha Esquerda (cm)</label>
-            <input type="text" class="form-element" id="pantuEsqMed" name="pantuEsqMed" value="<?php echo $usuario["pantuEsqMed"] ?>" required>
+            <input type="text" class="form-element" id="pantuEsqMed" name="pantuEsqMed"
+              value="<?php echo $usuario["pantuEsqMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="pantuDirMed" class="form-label">Panturrilha Direita (cm)</label>
-            <input type="text" class="form-element" id="pantuDirMed" name="pantuDirMed" value="<?php echo $usuario["pantuDirMed"] ?>" required>
+            <input type="text" class="form-element" id="pantuDirMed" name="pantuDirMed"
+              value="<?php echo $usuario["pantuDirMed"] ?>" required>
           </div>
 
           <div class="form-item">
             <label for="cinturaMed" class="form-label">Cintura (cm)</label>
-            <input type="text" class="form-element" id="cinturaMed" name="cinturaMed" value="<?php echo $usuario["cinturaMed"] ?>" required>
+            <input type="text" class="form-element" id="cinturaMed" name="cinturaMed"
+              value="<?php echo $usuario["cinturaMed"] ?>" required>
           </div>
 
 
         </div>
-        
+
     </div>
 
     <div class="flex">
       <button type="submit" value="Editar">Salvar</button>
     </div>
-    
+
     </form>
   </div>
 

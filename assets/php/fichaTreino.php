@@ -33,8 +33,8 @@ include_once("conexao.php");
     if ($total == 0) {
       for ($dia = 2; $dia < 7; $dia++) {
         for ($i = 1; $i < 4; $i++) {
-          $sql = "INSERT INTO treino(idUsuario, dia, grupo)
-                VALUES (" . $idUsuario . ", '$dia', 'Grupo " . $i . "')";
+          $sql = "INSERT INTO treino(idUsuario, dia)
+                VALUES (" . $idUsuario . ", '$dia')";
           $conn->query($sql);
         }
       }

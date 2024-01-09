@@ -95,7 +95,6 @@ session_start();
     </nav>
 
     <section class="home">
-        <div class="text">Início</div>
     </section>
 
     <script src="../js/paginaInicialUsuarios.js"></script>

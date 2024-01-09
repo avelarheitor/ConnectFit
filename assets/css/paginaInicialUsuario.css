@@ -198,7 +198,7 @@ header .image-text .header-text {
 .home {
     position: relative;
     left: 250px;
-    background: url(../images/telaInicio.jpg) no-repeat;
+    background: url(../images/PáginaInicial.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;

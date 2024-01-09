@@ -24,6 +24,21 @@ session_start();
 
         $consulta = $conn->query($sql);
         $usuario = $consulta->fetch_assoc();
+
+        //verifica se o usuario possui possui ficha
+        $sql = "SELECT * FROM treino WHERE idUsuario = $idUsuario";
+        $consulta = $conn->query($sql);
+        $treino = $consulta->fetch_assoc();
+        $total = mysqli_num_rows($consulta);
+        if ($total == 0) {
+            for ($dia = 2; $dia < 7; $dia++) {
+                for ($i = 1; $i < 4; $i++) {
+                    $sql = "INSERT INTO treino(idUsuario, dia, grupo)
+                VALUES (" . $idUsuario . ", '$dia', 'Grupo " . $i . "')";
+                    $conn->query($sql);
+                }
+            }
+        }
     }
     ?>
 
